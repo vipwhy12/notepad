@@ -1,0 +1,125 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/css/bootstrap.min.css"
+        integrity="sha384-B0vP5xmATw1+K9KRQjQERJvTumQW0nPEzvF6L/Z6nronJ3oUOFUFpCjEUQouq2+l" crossorigin="anonymous">
+
+    <!-- Optional JavaScript -->
+    <!-- jQuery and Bootstrap Bundle (includes Popper) -->
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
+        integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-Piv4xVNRyMGpqkS2by6br4gNJ7DXjqk09RmUpJ8jgGtD7zP9yug3goQfGII0yAns"
+        crossorigin="anonymous"></script>
+
+    <!-- 구글폰트 -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Dokdo&family=Noto+Serif+KR:wght@200&display=swap"
+        rel="stylesheet">
+
+    <title>SW사관학교 정글</title>
+
+    <!-- style -->
+    <style type="text/css">
+        * {
+            font-family: 'Noto Serif KR', serif;
+        }
+
+        body {
+            margin: 10px auto;
+            width: 800px;
+        }
+
+        .center{
+            text-align : center;
+        }
+
+        #post-box{
+            padding: 20px;
+            margin: 20px 100px;
+            border: 0.1px solid  black;
+            border-radius: 2px;
+        }
+    </style>
+
+    <!-- script -->
+    <script>
+        function insertPosting(){
+            status = $('#post-box').css('display')
+            if(status == 'block'){
+                $('#post-box').hide()
+                $('.btn-posting_box').text('열기')
+            }else{
+                $('#post-box').show()
+                $('.btn-posting_box').text('닫기')
+            }
+        }
+    </script>
+
+
+<body>
+    <div class="jumbotron">
+        <div class="center">
+            <h1 class="display-4">👋🏻Welcome NotePad👋🏻</h1>
+            <p class="lead">중요한 링크를 저장해두고, 나중에 볼 수 있는 공간입니다.</p>
+            <hr class="my-4">
+        </div>
+        <a class="btn btn-outline-secondary btn-lg btn-posting_box" href="#" role="button" onclick="insertPosting()">열기</a>
+    </div>
+
+    <div id="post-box" style="display: none;">
+        <div class="form-group">
+            <label for="formGroupExampleInput">Aticle URL</label>
+            <input type="text" class="form-control" id="formGroupExampleInput" placeholder="input URL">
+        </div>
+        <div class="form-group">
+            <label for="exampleFormControlTextarea1">Example textarea</label>
+            <textarea class="form-control" id="exampleFormControlTextarea1" rows="3"></textarea>
+        </div>
+        <button type="button" class="btn btn-outline-dark">SAVE</button>
+    </div>
+
+    <div class="card-deck">
+        <div class="card">
+            <img src="..." class="card-img-top" alt="...">
+            <div class="card-body">
+                <h5 class="card-title">Card title</h5>
+                <p class="card-text">This is a longer card with supporting text below as a natural lead-in to additional
+                    content. This content is a little bit longer.</p>
+                <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>
+            </div>
+        </div>
+        <div class="card">
+            <img src="..." class="card-img-top" alt="...">
+            <div class="card-body">
+                <h5 class="card-title">Card title</h5>
+                <p class="card-text">This card has supporting text below as a natural lead-in to additional content.</p>
+                <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>
+            </div>
+        </div>
+        <div class="card">
+            <img src="..." class="card-img-top" alt="...">
+            <div class="card-body">
+                <h5 class="card-title">Card title</h5>
+                <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional
+                    content. This card has even longer content than the first to show that equal height action.</p>
+                <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>
+            </div>
+        </div>
+    </div>
+
+
+
+
+    <script src=""></script>
+</body>
+
+</html>
